@@ -22,6 +22,7 @@
                     echo "Subtraction result: ";
                         echo "<h2 class = 'display-2 text-center lead'>" . $subtract . "<h2>";
                     echo "</div>";
+                    
                     echo "<div class = 'col-6 text-center lead'>";
                     echo "Multiplication";
                     echo "<h2 class = 'display-2 text-center'>" . $multiply . "<h2>";

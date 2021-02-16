@@ -1,10 +1,10 @@
 <?php
-function loop($input)
+function loop($limit)
 {
     echo "<form method  = 'post'>";
     echo "<div class = 'form-group mx-auto w-50'>";
 
-    for($x = 1; $x <= $input; $x++){
+    for($x = 1; $x <= $limit; $x++){
         echo "<input type = 'text' name='info' placeholder='Input a Data Here' class = form-control>";
         echo "<br>";
     }
@@ -45,7 +45,7 @@ function loop($input)
 
 <body>
     <form method="post">
-        <div class="form-group w-50 mx-auto mt-5">
+        <div class="w-50 mx-auto mt-5">
 
 
             <label for="">Enter number of input fields</label>

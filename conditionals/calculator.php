@@ -70,6 +70,7 @@ function calculate($num1, $num2, $op)
                 $num1 = $_POST['num1'];
                 $num2 = $_POST['num2'];
                 $operator = $_POST['operator'];
+
                 
                echo '<div class="jumbotron text-center">';
             

@@ -1,17 +1,16 @@
 <?php
 function building_floor($floor)
 {
-    if ($floor >= 1 AND $floor <= 22) {
-        if ($floor >= 1 AND $floor <= 5) {
+    if ($floor >= 1 and $floor <= 22) {
+        if ($floor >= 1 and $floor <= 5) {
             echo "<div class = 'alert alert-success'>this floors is rented by regus</div>";
-        } elseif ($floor >= 6 AND $floor <= 10) {
+        } elseif ($floor >= 6 and $floor <= 10) {
             echo "<div class = 'alert alert-warning'>this floors is rented by cebu land masters</div>";
-        } elseif ($floor >= 11 AND $floor <= 17) {
+        } elseif ($floor >= 11 and $floor <= 17) {
             echo "<div class = 'alert alert-secondary'>This floor is rented by Accenture</div>";
-        } elseif ($floor >= 18 AND $floor <= 22) {
+        } elseif ($floor >= 18 and $floor <= 22) {
             echo "<div class = 'alert alert-primary'>This floor is rented by KREDO IT</div>";
         }
-        
     } else {
         echo "<div class = 'alert alert-danger'>this building has only 22 floors</div>";
     }
@@ -43,20 +42,18 @@ function building_floor($floor)
             </div>
             <div class="card-body">
                 <form method="post">
-                    <div class="form-group">
+                    <!-- <div class="form-group"> -->
                         <label for="">Floor Number</label>
                         <input type="number" name="building_floor" class="form-control" required>
                         <br>
                         <button type="submit" name="check_floor" id="" class="btn btn-primary btn-lg btn-block">Submit</button>
 
-                    </div>
+                    <!-- </div> -->
                 </form>
                 <?php
                 if (isset($_POST['check_floor'])) {
-                    $building_floor = $_POST['building_floor'];
-
-
-                    building_floor($building_floor);
+                    $floor = $_POST['building_floor'];
+                     building_floor($floor);
                 }
 
 
